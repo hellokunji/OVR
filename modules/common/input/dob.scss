@@ -1,0 +1,51 @@
+@import '../../../config/config';
+
+.dob_input {
+  text-decoration: none;
+
+  & > label {
+    color: $mid-grey-color;
+    font-family: $font-secondary;
+    font-size: 14px;
+  }
+
+  & > .inputs {
+    margin-top: 6px;
+
+    .item {
+      display: inline-block;
+      vertical-align: middle;
+      width: 33.33%;
+      height: 34px;
+      position: relative;
+
+      .dropdown_icon {
+        position: absolute;
+        right: 5px;
+        top: 11px;
+        font-size: 14px;
+      }
+
+      select {
+        background-color: transparent;
+        width: 100%;
+        padding: 0 6px;
+        outline: none;
+        border: 1px solid $light-grey-color;
+        height: 34px;
+        border-radius: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+      select::-ms-expand {
+         display: none;
+      }
+    }
+
+    .item:nth-child(1), .item:nth-child(2) {
+      select {
+        border-right: none;
+      }
+    }
+  }
+}
